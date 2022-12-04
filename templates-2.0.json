@@ -224,10 +224,10 @@
 					"description": "Velheim Server Password"
 				},
 				{
-					"name": "SERVER_VISIBILITY",
-					"label": "SERVER_VISIBILITY",
+					"name": "SERVER_PUBLIC",
+					"label": "SERVER_PUBLIC",
 					"default": "false",
-					"description": "Velheim Server is listed"
+					"description": "Velheim Server is public"
 				},
 				{
 					"name": "ADMINLIST_IDS",
