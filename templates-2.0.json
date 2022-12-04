@@ -224,9 +224,9 @@
 					"description": "Velheim Server Password"
 				},
 				{
-					"name": "SERVER_PUBLIC",
-					"label": "SERVER_PUBLIC",
-					"default": false,
+					"name": "SERVER_VISIBILITY",
+					"label": "SERVER_VISIBILITY",
+					"default": "false",
 					"description": "Velheim Server is listed"
 				},
 				{
