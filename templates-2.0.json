@@ -214,7 +214,7 @@
 				{
 					"name": "SERVER_PORT",
 					"label": "SERVER_PORT",
-					"default": 2456,
+					"default": "2456",
 					"description": "Velheim Server Port"
 				},
 				{
