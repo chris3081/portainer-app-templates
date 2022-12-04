@@ -3,13 +3,13 @@ services:
   dishorde:
     build: dishorde
       context: dishorde
-        args:
-          IP: 7dtdserver
-          PASSWORD: ${TELNET_PASSWORD}
-          TOKEN: ${DISCORD_TOKEN}
-          CHANNEL: ${DISCORD_CHANNEL_ID}
-          PORT: 8081
-          VERSION: ${DISHORDE_VERSION}
+      args:
+        IP: 7dtdserver
+        PASSWORD: ${TELNET_PASSWORD}
+        TOKEN: ${DISCORD_TOKEN}
+        CHANNEL: ${DISCORD_CHANNEL_ID}
+        PORT: 8081
+        VERSION: ${DISHORDE_VERSION}
     container_name: dishorde
     networks:
       - 7days

@@ -2,14 +2,14 @@ version: "3"
 
 services:
   valcord:
-    build: valcord
+    build:
       context: valcord
-        args:
-          TOKEN: ${DISCORD_TOKEN}
-          SERVER_ADDRESS: valheim
-          SERVER_PORT: ${SERVER_PORT}
-          SERVER_NAME: ${DISCORD_BOT_NAME}
-          CHANNEL_ID: ${CHANNEL_ID}
+      args:
+        TOKEN: ${DISCORD_TOKEN}
+        SERVER_ADDRESS: valheim
+        SERVER_PORT: ${SERVER_PORT}
+        SERVER_NAME: ${DISCORD_BOT_NAME}
+        CHANNEL_ID: ${CHANNEL_ID}
     container_name: valcord
     networks:
       - valheim
