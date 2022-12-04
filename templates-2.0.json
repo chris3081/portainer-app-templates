@@ -264,6 +264,12 @@
 					"label": "CHANNEL_ID",
 					"default": "123",
 					"description": "Velheim Discord Bot Channel ID to join"
+				},
+				{
+					"name": "VCHANNEL_ID",
+					"label": "VCHANNEL_ID",
+					"default": "123",
+					"description": "Velheim Discord Bot Voice Channel ID to join"
 				}
 			]
 		}

@@ -10,6 +10,7 @@ services:
       SERVER_PORT: ${SERVER_PORT}
       SERVER_NAME: ${DISCORD_BOT_NAME}
       CHANNEL_ID: ${CHANNEL_ID}
+      VCHANNEL_ID: ${VCHANNEL_ID}
     container_name: valcord
     networks:
       - valheim
