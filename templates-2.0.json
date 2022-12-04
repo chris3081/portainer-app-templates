@@ -1,0 +1,271 @@
+{
+	"version": "2",
+	"templates": [
+		{
+			"type": 3,
+			"title": "7_days_to_die",
+			"name": "7_days_to_die",
+			"note": "7 Days tp die server and discord bot",
+			"description": "The survival horde crafting gane.",
+			"platform": "linux",
+			"categories": ["games"],
+			"repository": {
+			  "url": "https://github.com/chris3081/portainer-app-templates",
+			  "stackfile": "stacks/7daystodie/docker-compose.yml"
+			},
+			"logo": "https://7daystodie.com/images/header_g.png",
+			"env": [
+				{
+					"name": "START_MODE",
+					"label": "START_MODE",
+					"default": "1",
+					"description": "Change between START MODES"
+				},
+				{
+					"name": "VERSION",
+					"label": "VERSION",
+					"default": "stable",
+					"description": "Change between 7 days to die versions"
+				},
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Remap container context UID (User ID) to Host User ID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Remap container context GID (Group ID) to Host Group ID"
+				},
+				{
+					"name": "TimeZone",
+					"label": "TimeZone",
+					"default": "Europe/Madrid",
+					"description": "Change Timezone"
+				},
+				{
+					"name": "TEST_ALERT",
+					"label": "TEST_ALERT",
+					"default": "NO",
+					"description": "Send a test alert"
+				},
+				{
+					"name": "UPDATE_MODS",
+					"label": "UPDATE_MODS",
+					"default": "NO",
+					"description": "This will allow mods to be update on start, each mod also need to have XXXX_UPDATE=YES to update on start"
+				},
+				{
+					"name": "ALLOC_FIXES",
+					"label": "ALLOC_FIXES",
+					"default": "NO",
+					"description": "Install ALLOC FIXES"
+				},
+				{
+					"name": "ALLOC_FIXES_UPDATE",
+					"label": "ALLOC_FIXES_UPDATE",
+					"default": "NO",
+					"description": "Update Allocs Fixes before server start"
+				},
+				{
+					"name": "UNDEAD_LEGACY",
+					"label": "UNDEAD_LEGACY",
+					"default": "NO",
+					"description": "Install Undead Legacy mod"
+				},
+				{
+					"name": "UNDEAD_LEGACY_VERSION",
+					"label": "UNDEAD_LEGACY_VERSION",
+					"default": "stable",
+					"description": "Undead Legacy version"
+				},
+				{
+					"name": "UNDEAD_LEGACY_UPDATE",
+					"label": "UNDEAD_LEGACY_UPDATE",
+					"default": "NO",
+					"description": "Update Undead Legacy mod before server start"
+				},				
+				{
+					"name": "ENZOMBIES",
+					"label": "ENZOMBIES",
+					"default": "NO",
+					"description": "Install EnZombies mod"
+				},	
+				{
+					"name": "ENZOMBIES",
+					"label": "ENZOMBIES",
+					"default": "NO",
+					"description": "Install EnZombies mod"
+				},	
+				{
+					"name": "ENZOMBIES_ADDON_SNUFKIN",
+					"label": "ENZOMBIES_ADDON_SNUFKIN",
+					"default": "NO",
+					"description": "Install EnZombies addon mod"
+				},	
+				{
+					"name": "ENZOMBIES_ADDON_SNUFKIN",
+					"label": "ENZOMBIES_ADDON_SNUFKIN",
+					"default": "NO",
+					"description": "Install EnZombies addon mod"
+				},	
+				{
+					"name": "ENZOMBIES_ADDON_ROBELOTO",
+					"label": "ENZOMBIES_ADDON_ROBELOTO",
+					"default": "NO",
+					"description": "Install EnZombies addon mod"
+				},
+				{
+					"name": "ENZOMBIES_ADDON_NONUDES",
+					"label": "ENZOMBIES_ADDON_NONUDES",
+					"default": "NO",
+					"description": "Install EnZombies addon mod"
+				},		
+				{
+					"name": "ENZOMBIES_UPDATE",
+					"label": "ENZOMBIES_UPDATE",
+					"default": "NO",
+					"description": "Update EnZombies mod and addons before server start"
+				},
+				{
+					"name": "CPM",
+					"label": "CPM",
+					"default": "NO",
+					"description": "CSMM Patron's Mod (CPM)"
+				},
+				{
+					"name": "CPM_UPDATE",
+					"label": "CPM_UPDATE",
+					"default": "NO",
+					"description": "Update BepInEx before server start"
+				},
+				{
+					"name": "BEPINEX",
+					"label": "BEPINEX",
+					"default": "NO",
+					"description": "BepInEx"
+				},
+				{
+					"name": "BEPINEX_UPDATE",
+					"label": "BEPINEX_UPDATE",
+					"default": "NO",
+					"description": "Update BepInEx before server start"
+				},
+				{
+					"name": "BACKUP",
+					"label": "BACKUP",
+					"default": "NO",
+					"description": "Backup server at 5 AM"
+				},
+				{
+					"name": "MONITOR",
+					"label": "MONITOR",
+					"default": "NO",
+					"description": "Keeps server up if crash"
+				},
+				{
+					"name": "TELNET_PASSWORD",
+					"label": "TELNET_PASSWORD",
+					"default": "password",
+					"description": "Telnet Password"
+				},
+				{
+					"name": "DISCORD_TOKEN",
+					"label": "DISCORD_TOKEN",
+					"default": "password",
+					"description": "Discord Bot token"
+				},
+				{
+					"name": "DISCORD_CHANNEL_ID",
+					"label": "DISCORD_CHANNEL_ID",
+					"default": "33",
+					"description": "Discord Channel Bot needs to join"
+				}, 
+				{
+					"name": "DISHORDE_VERSION",
+					"label": "DISHORDE_VERSION",
+					"default": "v2.0.1",
+					"description": "Dishorde bot version"
+				}
+			]
+		},
+		{
+			"type": 3,
+			"title": "Valheim",
+			"name": "Valheim",
+			"note": "Valheim server and discord bot",
+			"description": "Valheim gane.",
+			"platform": "linux",
+			"categories": ["games"],
+			"repository": {
+			  "url": "https://github.com/chris3081/portainer-app-templates",
+			  "stackfile": "stacks/valheim/docker-compose.yml"
+			},
+			"logo": "https://static.wikia.nocookie.net/valheim/images/4/4c/Logo_valheim.png/revision/latest?cb=20200819084630",
+			"env": [
+				{
+					"name": "SERVER_NAME",
+					"label": "SERVER_NAME",
+					"default": "My Server",
+					"description": "Velheim Server Name"
+				},
+				{
+					"name": "SERVER_PORT",
+					"label": "SERVER_PORT",
+					"default": 2456,
+					"description": "Velheim Server Port"
+				},
+				{
+					"name": "SERVER_PASS",
+					"label": "SERVER_PASS",
+					"default": "password",
+					"description": "Velheim Server Password"
+				},
+				{
+					"name": "SERVER_PUBLIC",
+					"label": "SERVER_PUBLIC",
+					"default": false,
+					"description": "Velheim Server is listed"
+				},
+				{
+					"name": "ADMINLIST_IDS",
+					"label": "ADMINLIST_IDS",
+					"default": "",
+					"description": "Velheim Server Admins steam ids"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Madrid",
+					"description": "Velheim Server Server Tiemzone"
+				},
+				{
+					"name": "WORLD_NAME",
+					"label": "WORLD_NAME",
+					"default": "dedicated",
+					"description": "Velheim Server World filename"
+				},
+				{
+					"name": "DISCORD_TOKEN",
+					"label": "DISCORD_TOKEN",
+					"default": "12342",
+					"description": "Velheim Discord Bot Token"
+				},
+				{
+					"name": "DISCORD_BOT_NAME",
+					"label": "DISCORD_BOT_NAME",
+					"default": "botman",
+					"description": "Velheim Server Bot Name"
+				},
+				{
+					"name": "CHANNEL_ID",
+					"label": "CHANNEL_ID",
+					"default": "123",
+					"description": "Velheim Discord Bot Channel ID to join"
+				}
+			]
+		}
+	]
+}

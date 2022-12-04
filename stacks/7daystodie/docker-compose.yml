@@ -1,0 +1,67 @@
+version: '2'
+services:
+  dishorde:
+    build: dishorde
+      context: dishorde
+        args:
+          IP: 7dtdserver
+          PASSWORD: ${TELNET_PASSWORD}
+          TOKEN: ${DISCORD_TOKEN}
+          CHANNEL: ${DISCORD_CHANNEL_ID}
+          PORT: 8081
+          VERSION: ${DISHORDE_VERSION}
+    container_name: dishorde
+    networks:
+      - 7days
+    restart: unless-stopped
+  7dtdserver:
+    image: vinanrra/7dtd-server
+    container_name: 7dtdserver
+    environment:
+      - START_MODE=${START_MODE}
+      - VERSION=${VERSION}
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TimeZone=${TimeZone}
+      - TEST_ALERT=${TEST_ALERT}
+      - UPDATE_MODS=${UPDATE_MODS}
+      - ALLOC_FIXES=${ALLOC_FIXES}
+      - ALLOC_FIXES_UPDATE=${ALLOC_FIXES_UPDATE}
+      - UNDEAD_LEGACY=${UNDEAD_LEGACY}
+      - UNDEAD_LEGACY_VERSION=${UNDEAD_LEGACY_VERSION}
+      - UNDEAD_LEGACY_UPDATE=${UNDEAD_LEGACY_UPDATE}
+      - ENZOMBIES=${ENZOMBIES}
+      - ENZOMBIES_ADDON_SNUFKIN=${ENZOMBIES_ADDON_SNUFKIN}
+      - ENZOMBIES_ADDON_ROBELOTO=${ENZOMBIES_ADDON_ROBELOTO}
+      - ENZOMBIES_ADDON_NONUDES=${ENZOMBIES_ADDON_NONUDES}
+      - ENZOMBIES_UPDATE=${ENZOMBIES_UPDATE}
+      - CPM=${CPM}
+      - CPM_UPDATE=${CPM_UPDATE}
+      - BEPINEX=${BEPINEX}
+      - BEPINEX_UPDATE=${BEPINEX_UPDATE}
+      - BACKUP=${BACKUP}
+      - MONITOR=${MONITOR}
+    volumes:
+      - 7DaysToDie:/home/sdtdserver/.local/share/7DaysToDie/
+      - config:/home/sdtdserver/lgsm/config-lgsm/sdtdserver
+      - serverfiles:/home/sdtdserver/serverfiles/
+      - log:/home/sdtdserver/log/
+      - backups:/home/sdtdserver/lgsm/backup/
+    networks:
+      - 7days
+    ports:
+      - 26900:26900/tcp
+      - 26900:26900/udp
+      - 26901:26901/udp
+      - 26902:26902/udp
+    restart: unless-stopped
+
+volumes:
+  backups:
+  logs:
+  config:
+  ServerFiles:
+  7DaysToDie:
+
+networks:
+  7days: {}
