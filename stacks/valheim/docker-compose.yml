@@ -5,12 +5,11 @@ services:
     build:
       context: valcord
     environment:
-      TOKEN: ${DISCORD_TOKEN}
+      BOT_TOKEN: ${DISCORD_TOKEN}
       SERVER_ADDRESS: valheim
       SERVER_PORT: ${SERVER_PORT}
       SERVER_NAME: ${DISCORD_BOT_NAME}
-      CHANNEL_ID: ${CHANNEL_ID}
-      VCHANNEL_ID: ${VCHANNEL_ID}
+      CHANNEL_NAME: ${CHANNEL_NAME}
     container_name: valcord
     networks:
       - valheim

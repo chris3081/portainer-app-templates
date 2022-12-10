@@ -8,10 +8,12 @@
 			"note": "7 Days tp die server and discord bot",
 			"description": "The survival horde crafting gane.",
 			"platform": "linux",
-			"categories": ["games"],
+			"categories": [
+				"games"
+			],
 			"repository": {
-			  "url": "https://github.com/chris3081/portainer-app-templates",
-			  "stackfile": "stacks/7daystodie/docker-compose.yml"
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/7daystodie/docker-compose.yml"
 			},
 			"logo": "https://7daystodie.com/images/header_g.png",
 			"env": [
@@ -86,31 +88,31 @@
 					"label": "UNDEAD_LEGACY_UPDATE",
 					"default": "NO",
 					"description": "Update Undead Legacy mod before server start"
-				},				
+				},
 				{
 					"name": "ENZOMBIES",
 					"label": "ENZOMBIES",
 					"default": "NO",
 					"description": "Install EnZombies mod"
-				},	
+				},
 				{
 					"name": "ENZOMBIES",
 					"label": "ENZOMBIES",
 					"default": "NO",
 					"description": "Install EnZombies mod"
-				},	
+				},
 				{
 					"name": "ENZOMBIES_ADDON_SNUFKIN",
 					"label": "ENZOMBIES_ADDON_SNUFKIN",
 					"default": "NO",
 					"description": "Install EnZombies addon mod"
-				},	
+				},
 				{
 					"name": "ENZOMBIES_ADDON_SNUFKIN",
 					"label": "ENZOMBIES_ADDON_SNUFKIN",
 					"default": "NO",
 					"description": "Install EnZombies addon mod"
-				},	
+				},
 				{
 					"name": "ENZOMBIES_ADDON_ROBELOTO",
 					"label": "ENZOMBIES_ADDON_ROBELOTO",
@@ -122,7 +124,7 @@
 					"label": "ENZOMBIES_ADDON_NONUDES",
 					"default": "NO",
 					"description": "Install EnZombies addon mod"
-				},		
+				},
 				{
 					"name": "ENZOMBIES_UPDATE",
 					"label": "ENZOMBIES_UPDATE",
@@ -182,7 +184,7 @@
 					"label": "DISCORD_CHANNEL_ID",
 					"default": "33",
 					"description": "Discord Channel Bot needs to join"
-				}, 
+				},
 				{
 					"name": "DISHORDE_VERSION",
 					"label": "DISHORDE_VERSION",
@@ -198,10 +200,12 @@
 			"note": "Valheim server and discord bot",
 			"description": "Valheim gane.",
 			"platform": "linux",
-			"categories": ["games"],
+			"categories": [
+				"games"
+			],
 			"repository": {
-			  "url": "https://github.com/chris3081/portainer-app-templates",
-			  "stackfile": "stacks/valheim/docker-compose.yml"
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/valheim/docker-compose.yml"
 			},
 			"logo": "https://static.wikia.nocookie.net/valheim/images/4/4c/Logo_valheim.png/revision/latest?cb=20200819084630",
 			"env": [
@@ -226,7 +230,7 @@
 				{
 					"name": "SERVER_PUBLIC",
 					"label": "SERVER_PUBLIC",
-					"default": "false",
+					"default": "true",
 					"description": "Velheim Server is public"
 				},
 				{
@@ -260,16 +264,104 @@
 					"description": "Velheim Server Bot Name"
 				},
 				{
-					"name": "CHANNEL_ID",
-					"label": "CHANNEL_ID",
-					"default": "123",
-					"description": "Velheim Discord Bot Channel ID to join"
+					"name": "CHANNEL_NAME",
+					"label": "CHANNEL_NAME",
+					"default": "valheim",
+					"description": "Velheim Discord Bot Channel Name to join"
+				}
+			]
+		},
+		{
+			"type": 1,
+			"title": "Registry",
+			"description": "Docker image registry",
+			"categories": [
+				"docker"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "registry:latest",
+			"ports": [
+				"5000/tcp"
+			],
+			"volumes": [
+				{
+					"container": "/var/lib/registry"
+				}
+			]
+		},
+		{
+			"type": 1,
+			"title": "Registry (cache)",
+			"description": "Docker image registry configured as a DockerHub pull through cache",
+			"categories": [
+				"docker"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"image": "registry:latest",
+			"ports": [
+				"5000/tcp"
+			],
+			"volumes": [
+				{
+					"container": "/var/lib/registry"
+				}
+			],
+			"env": [
+				{
+					"name": "REGISTRY_PROXY_REMOTEURL",
+					"default": "https://registry-1.docker.io",
+					"preset": true
+				}
+			]
+		},
+		{
+			"type": 1,
+			"title": "Ubuntu",
+			"description": "Debian-based Linux operating system",
+			"categories": [
+				"operating-system"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ubuntu.png",
+			"image": "ubuntu:latest",
+			"interactive": true,
+			"command": "/bin/bash"
+		},
+		{
+			"type": 1,
+			"title": "NodeJS",
+			"description": "JavaScript-based platform for server-side and networking applications",
+			"categories": [
+				"development"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
+			"image": "node:latest",
+			"interactive": true,
+			"command": "/bin/bash"
+		},
+		{
+			"type": 1,
+			"title": "Nginx",
+			"description": "High performance web server",
+			"categories": [
+				"webserver"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
+			"image": "nginx:latest",
+			"ports": [
+				"80/tcp",
+				"443/tcp"
+			],
+			"volumes": [
+				{
+					"container": "/etc/nginx"
 				},
 				{
-					"name": "VCHANNEL_ID",
-					"label": "VCHANNEL_ID",
-					"default": "123",
-					"description": "Velheim Discord Bot Voice Channel ID to join"
+					"container": "/usr/share/nginx/html"
 				}
 			]
 		}
