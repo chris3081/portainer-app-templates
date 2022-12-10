@@ -207,7 +207,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/valheim/docker-compose.yml"
 			},
-			"logo": "https://static.wikia.nocookie.net/valheim/images/4/4c/Logo_valheim.png/revision/latest?cb=20200819084630",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/Logo_valheim.png",
 			"env": [
 				{
 					"name": "SERVER_NAME",
