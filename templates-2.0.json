@@ -222,6 +222,12 @@
 					"description": "Velheim Server Port"
 				},
 				{
+					"name": "STATUS_HTTP_PORT",
+					"label": "STATUS_HTTP_PORT",
+					"default": "2455",
+					"description": "Velheim HTTP status Server Port"
+				},
+				{
 					"name": "SERVER_PASS",
 					"label": "SERVER_PASS",
 					"default": "password",
@@ -232,6 +238,24 @@
 					"label": "SERVER_PUBLIC",
 					"default": "true",
 					"description": "Velheim Server is public"
+				},
+				{
+					"name": "BACKUPS_DIRECTORY",
+					"label": "BACKUPS_DIRECTORY",
+					"default": "/config/backups",
+					"description": "Backups directory inside Valheim"
+				},
+				{
+					"name": "BACKUPS_BIND_DIRECTORY",
+					"label": "BACKUPS_BIND_DIRECTORY",
+					"default": "/mnt/backups/valheim",
+					"description": "Host Bind mountpoint"
+				},
+				{
+					"name": "VALHEIM_PLUS",
+					"label": "VALHEIM_PLUS",
+					"default": "true",
+					"description": "Velheim Plus"
 				},
 				{
 					"name": "ADMINLIST_IDS",
@@ -250,6 +274,12 @@
 					"label": "WORLD_NAME",
 					"default": "dedicated",
 					"description": "Velheim Server World filename"
+				},
+				{
+					"name": "STATUS_HTTP",
+					"label": "STATUS_HTTP",
+					"default": "true",
+					"description": "Velheim HTTP status Server"
 				},
 				{
 					"name": "DISCORD_TOKEN",

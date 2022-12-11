@@ -21,6 +21,7 @@ services:
     volumes: 
       - config:/config
       - serverfiles:/opt/valheim
+      - ${BACKUPS_BIND_DIRECTORY}:${BACKUPS_DIRECTORY}
     ports: 
       - "2456-2457:2456-2457/udp"
       - "9001:9001/tcp"
@@ -32,6 +33,10 @@ services:
       ADMINLIST_IDS: ${ADMINLIST_IDS}
       TZ: ${TZ}
       WORLD_NAME: ${WORLD_NAME}
+      STATUS_HTTP: ${STATUS_HTTP}
+      STATUS_HTTP_PORT: ${STATUS_HTTP_PORT}
+      BACKUPS_DIRECTORY: ${BACKUPS_DIRECTORY}
+      VALHEIM_PLUS: ${VALHEIM_PLUS}
     restart: unless-stopped
     stop_grace_period: 2m
 
