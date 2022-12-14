@@ -218,14 +218,8 @@
 				{
 					"name": "SERVER_PORT",
 					"label": "SERVER_PORT",
-					"default": "2456",
-					"description": "Velheim Server Port"
-				},
-				{
-					"name": "STATUS_HTTP_PORT",
-					"label": "STATUS_HTTP_PORT",
-					"default": "2455",
-					"description": "Velheim HTTP status Server Port"
+					"default": "2456-2457:2456-2457",
+					"description": "Velheim Server Port range"
 				},
 				{
 					"name": "SERVER_PASS",
@@ -276,12 +270,6 @@
 					"description": "Velheim Server World filename"
 				},
 				{
-					"name": "STATUS_HTTP",
-					"label": "STATUS_HTTP",
-					"default": "true",
-					"description": "Velheim HTTP status Server"
-				},
-				{
 					"name": "DISCORD_TOKEN",
 					"label": "DISCORD_TOKEN",
 					"default": "12342",
@@ -298,100 +286,6 @@
 					"label": "CHANNEL_NAME",
 					"default": "valheim",
 					"description": "Velheim Discord Bot Channel Name to join"
-				}
-			]
-		},
-		{
-			"type": 1,
-			"title": "Registry",
-			"description": "Docker image registry",
-			"categories": [
-				"docker"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-			"image": "registry:latest",
-			"ports": [
-				"5000/tcp"
-			],
-			"volumes": [
-				{
-					"container": "/var/lib/registry"
-				}
-			]
-		},
-		{
-			"type": 1,
-			"title": "Registry (cache)",
-			"description": "Docker image registry configured as a DockerHub pull through cache",
-			"categories": [
-				"docker"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-			"image": "registry:latest",
-			"ports": [
-				"5000/tcp"
-			],
-			"volumes": [
-				{
-					"container": "/var/lib/registry"
-				}
-			],
-			"env": [
-				{
-					"name": "REGISTRY_PROXY_REMOTEURL",
-					"default": "https://registry-1.docker.io",
-					"preset": true
-				}
-			]
-		},
-		{
-			"type": 1,
-			"title": "Ubuntu",
-			"description": "Debian-based Linux operating system",
-			"categories": [
-				"operating-system"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ubuntu.png",
-			"image": "ubuntu:latest",
-			"interactive": true,
-			"command": "/bin/bash"
-		},
-		{
-			"type": 1,
-			"title": "NodeJS",
-			"description": "JavaScript-based platform for server-side and networking applications",
-			"categories": [
-				"development"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
-			"image": "node:latest",
-			"interactive": true,
-			"command": "/bin/bash"
-		},
-		{
-			"type": 1,
-			"title": "Nginx",
-			"description": "High performance web server",
-			"categories": [
-				"webserver"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
-			"image": "nginx:latest",
-			"ports": [
-				"80/tcp",
-				"443/tcp"
-			],
-			"volumes": [
-				{
-					"container": "/etc/nginx"
-				},
-				{
-					"container": "/usr/share/nginx/html"
 				}
 			]
 		}

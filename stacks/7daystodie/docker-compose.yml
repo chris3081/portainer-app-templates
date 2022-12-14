@@ -1,16 +1,14 @@
 version: '2'
 services:
   dishorde:
-    build: dishorde
-      context: dishorde
-      args:
-        IP: 7dtdserver
-        PASSWORD: ${TELNET_PASSWORD}
-        TOKEN: ${DISCORD_TOKEN}
-        CHANNEL: ${DISCORD_CHANNEL_ID}
-        PORT: 8081
-        VERSION: ${DISHORDE_VERSION}
+    image: ghcr.io/chris3081/dishorde:latest
     container_name: dishorde
+    environment:
+      SD_IP: 7dtdserver
+      SD_PASSWORD: ${TELNET_PASSWORD}
+      SD_TOKEN: ${DISCORD_TOKEN}
+      SD_CHANNEL: ${DISCORD_CHANNEL_ID}
+      SD_PORT: 8081
     networks:
       - 7days
     restart: unless-stopped
