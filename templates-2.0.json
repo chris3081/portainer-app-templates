@@ -216,10 +216,16 @@
 					"description": "Velheim Server Name"
 				},
 				{
-					"name": "SERVER_PORT",
-					"label": "SERVER_PORT",
-					"default": "2456-2457:2456-2457",
+					"name": "SERVER_PORTS",
+					"label": "SERVER_PORTS",
+					"default": "2456-2457",
 					"description": "Velheim Server Port range"
+				},
+				{
+					"name": "GAME_PORT",
+					"label": "GAME_PORT",
+					"default": "2456",
+					"description": "Velheim Game Port"
 				},
 				{
 					"name": "SERVER_PASS",
@@ -286,6 +292,12 @@
 					"label": "CHANNEL_NAME",
 					"default": "valheim",
 					"description": "Velheim Discord Bot Channel Name to join"
+				},
+				{
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/data/valheim/config",
+					"description": "Valheim config directory binding"
 				}
 			]
 		}
