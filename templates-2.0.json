@@ -176,19 +176,19 @@
 				{
 					"name": "CONFIG_DIRECTORY",
 					"label": "CONFIG_DIRECTORY",
-					"default": "/srv/7d/config",
+					"default": "/srv/data/7days/config",
 					"description": "7 Days Config Directory"
 				},
 				{
 					"name": "BACKUPS_BIND_DIRECTORY",
 					"label": "BACKUPS_BIND_DIRECTORY",
-					"default": "/srv/backup/7d",
+					"default": "/srv/backup/7days",
 					"description": "7 Days backup Directory"
 				},
 				{
 					"name": "SERVER_FILES",
 					"label": "SERVER_FILES",
-					"default": "/srv/7d/data",
+					"default": "/srv/data/7d/server",
 					"description": "7 Days server files Directory"
 				},
 				{
