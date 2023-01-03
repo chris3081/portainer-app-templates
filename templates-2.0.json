@@ -188,7 +188,7 @@
 				{
 					"name": "SERVER_FILES",
 					"label": "SERVER_FILES",
-					"default": "/srv/data/7d/server",
+					"default": "/srv/data/7days/server",
 					"description": "7 Days server files Directory"
 				},
 				{
