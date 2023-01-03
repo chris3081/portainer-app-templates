@@ -174,24 +174,6 @@
 					"description": "Telnet Password"
 				},
 				{
-					"name": "DISCORD_TOKEN",
-					"label": "DISCORD_TOKEN",
-					"default": "password",
-					"description": "Discord Bot token"
-				},
-				{
-					"name": "DISCORD_CHANNEL_ID",
-					"label": "DISCORD_CHANNEL_ID",
-					"default": "33",
-					"description": "Discord Channel Bot needs to join"
-				},
-				{
-					"name": "DISHORDE_VERSION",
-					"label": "DISHORDE_VERSION",
-					"default": "v2.0.1",
-					"description": "Dishorde bot version"
-				},
-				{
 					"name": "CONFIG_DIRECTORY",
 					"label": "CONFIG_DIRECTORY",
 					"default": "/srv/7d/config",
@@ -208,6 +190,18 @@
 					"label": "SERVER_FILES",
 					"default": "/srv/7d/data",
 					"description": "7 Days server files Directory"
+				},
+				{
+					"name": "DISCORD_TOKEN",
+					"label": "DISCORD_TOKEN",
+					"default": "password",
+					"description": "Discord Bot token"
+				},
+				{
+					"name": "DISCORD_CHANNEL_ID",
+					"label": "DISCORD_CHANNEL_ID",
+					"default": "33",
+					"description": "Discord Channel Bot needs to join"
 				}
 			]
 		},

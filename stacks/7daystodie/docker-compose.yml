@@ -43,7 +43,7 @@ services:
       - 7DaysToDie:/home/sdtdserver/.local/share/7DaysToDie/
       - ${CONFIG_DIRECTORY}:/home/sdtdserver/lgsm/config-lgsm/sdtdserver
       - ${SERVER_FILES}:/home/sdtdserver/serverfiles/
-      - log:/home/sdtdserver/log/
+      - logs:/home/sdtdserver/log/
       - ${BACKUPS_BIND_DIRECTORY}:/home/sdtdserver/lgsm/backup/
     networks:
       - 7days
