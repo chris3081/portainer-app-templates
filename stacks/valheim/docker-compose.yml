@@ -18,7 +18,7 @@ services:
     cap_add:
       - sys_nice
     volumes: 
-      - config:/config
+      - ${CONFIG_DIRECTORY}:/config
       - serverfiles:/opt/valheim
       - ${BACKUPS_BIND_DIRECTORY}:${BACKUPS_DIRECTORY}
     ports: 
@@ -40,7 +40,6 @@ services:
     stop_grace_period: 2m
 
 volumes:
-  config:
   serverfiles:
   
 networks:

@@ -190,6 +190,24 @@
 					"label": "DISHORDE_VERSION",
 					"default": "v2.0.1",
 					"description": "Dishorde bot version"
+				},
+				{
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/7d/config",
+					"description": "7 Days Config Directory"
+				},
+				{
+					"name": "BACKUPS_BIND_DIRECTORY",
+					"label": "BACKUPS_BIND_DIRECTORY",
+					"default": "/srv/backup/7d",
+					"description": "7 Days backup Directory"
+				},
+				{
+					"name": "SERVER_FILES",
+					"label": "SERVER_FILES",
+					"default": "/srv/7d/data",
+					"description": "7 Days server files Directory"
 				}
 			]
 		},
