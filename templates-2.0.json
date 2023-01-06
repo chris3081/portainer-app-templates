@@ -352,7 +352,7 @@
 					"label": "STEAMBETA",
 					"default": "false",
 					"description": "Steam beta client"
-				},
+				}
 			]
 		}
 	]
