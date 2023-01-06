@@ -336,10 +336,64 @@
 					"description": "Satisfactory config directory binding"
 				},
 				{
+					"name": "AUTOPAUSE",
+					"label": "AUTOPAUSE",
+					"default": "TRUE",
+					"description": "pause game when no player is connected"
+				},
+				{
+					"name": "AUTOSAVEINTERVAL",
+					"label": "AUTOSAVEINTERVAL",
+					"default": "300",
+					"description": "autosave interval in seconds"
+				},
+				{
+					"name": "AUTOSAVENUM",
+					"label": "AUTOSAVENUM",
+					"default" : "5",
+					"description": "number of rotating autosave files"
+				},
+				{
+					"name": "AUTOSAVEONDISCONNECT",
+					"label": "AUTOSAVEONDISCONNECT",
+					"default" : "TRUE",
+					"description": "autosave when last player disconnects"
+				},
+				{
+					"name": "CRASHREPORT",
+					"label": "CRASHREPORT",
+					"default" : "TRUE",
+					"description": "automatic crash reporting"
+				},
+				{
+					"name": "DEBUG",
+					"label": "DEBUG",
+					"default" : "FALSE",
+					"description": "for debugging the server"
+				},
+				{
+					"name": "DISABLESEASONALEVENTS",
+					"label": "DISABLESEASONALEVENTS",
+					"default" : "FALSE",
+					"description": "disable the FICSMAS event (you miserable bastard)"
+				},
+				{
+					"name": "MAXOBJECTS",
+					"label": "MAXOBJECTS",
+					"default" : "2162688",
+					"description": "set the object limit for your server"
+				},
+				{
 					"name": "MAXPLAYERS",
 					"label": "MAXPLAYERS",
 					"default": "8",
-					"description": "Max players"
+					"description": "set the player limit for your server"
+				},
+				{
+					"name": "NETWORKQUALITY",
+					"label": "NETWORKQUALITY",
+					"default" : "3",
+					"description": "set the network quality/bandwidth for your server"
 				},
 				{
 					"name": "PGID",
@@ -354,11 +408,47 @@
 					"description": "User ID"
 				},
 				{
+					"name": "SERVERBEACONPORT",
+					"label": "SERVERBEACONPORT",
+					"default" : "15000",
+					"description": "set the game's beacon port"
+				},
+				{
+					"name": "SERVERGAMEPORT",
+					"label": "SERVERGAMEPORT",
+					"default" : "7777",
+					"description": "set the game's port"
+				},
+				{
+					"name": "SERVERIP",
+					"label": "SERVERIP",
+					"default" : "0.0.0.0",
+					"description": "set the game's ip (usually not needed)"
+				},
+				{
+					"name": "SERVERQUERYPORT",
+					"label": "SERVERQUERYPORT",
+					"default" : "15777",
+					"description": "set the game's query port"
+				},
+				{
+					"name": "SKIPUPDATE",
+					"label": "SKIPUPDATE",
+					"default" : "FALSE",
+					"description": "avoid updating the game on container start/restart"
+				},
+				{
 					"name": "STEAMBETA",
 					"label": "STEAMBETA",
-					"default": "false",
-					"description": "Steam beta client"
-				}
+					"default": "FALSE",
+					"description": "set experimental game version"
+				},
+				{
+					"name": "TIMEOUT",
+					"label": "TIMEOUT",
+					"default" : "300",
+					"description": "set client timeout (in seconds)"
+				}					
 			]
 		}
 	]
