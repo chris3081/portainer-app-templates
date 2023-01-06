@@ -327,7 +327,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/satisfactory/docker-compose.yml"
 			},
-			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.jpgg",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.jpg",
 			"env": [
 				{
 					"name": "CONFIG_DIRECTORY",
