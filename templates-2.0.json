@@ -210,7 +210,7 @@
 			"title": "Valheim",
 			"name": "Valheim",
 			"note": "Valheim server and discord bot",
-			"description": "Valheim gane.",
+			"description": "Valheim game.",
 			"platform": "linux",
 			"categories": [
 				"games"
@@ -311,6 +311,48 @@
 					"default": "/srv/data/valheim/config",
 					"description": "Valheim config directory binding"
 				}
+			]
+		},
+		{
+			"type": 3,
+			"title": "Satisfactory",
+			"name": "Satisfactory",
+			"note": "Satisfactory server",
+			"description": "Satisfactory game.",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/satisfactory/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.png",
+			"env": [
+				{
+					"name": "MAXPLAYERS",
+					"label": "MAXPLAYERS",
+					"default": "8",
+					"description": "Max players"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Group ID"
+				},
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "User ID"
+				},
+				{
+					"name": "STEAMBETA",
+					"label": "STEAMBETA",
+					"default": "false",
+					"description": "Steam beta client"
+				},
 			]
 		}
 	]
