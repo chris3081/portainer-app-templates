@@ -5,16 +5,31 @@ services:
         hostname: 'satisfactory-server'
         image: 'wolveix/satisfactory-server:latest'
         ports:
-            - '7777:7777/udp'
-            - '15000:15000/udp'
-            - '15777:15777/udp'
+            - "${SERVERGAMEPORT}:${SERVERGAMEPORT}/udp"
+            - "${SERVERBEACONPORT}:${SERVERBEACONPORT}/udp"
+            - "${SERVERQUERYPORT}:${SERVERQUERYPORT}/udp"
         volumes:
             - ${CONFIG_DIRECTORY}:/config
         environment:
+            - AUTOPAUSE=${AUTOPAUSE}
+            - AUTOSAVEINTERVAL=${AUTOSAVEINTERVAL}
+            - AUTOSAVENUM=${AUTOSAVENUM}
+            - AUTOSAVEONDISCONNECT=${AUTOSAVEONDISCONNECT}
+            - CRASHREPORT=${CRASHREPORT}
+            - DEBUG=${DEBUG}
+            - DISABLESEASONALEVENTS=${DISABLESEASONALEVENTS}
+            - MAXOBJECTS=${MAXOBJECTS}
             - MAXPLAYERS=${MAXPLAYERS}
+            - NETWORKQUALITY=${NETWORKQUALITY}
             - PGID=${PGID}
             - PUID=${PUID}
+            - SERVERBEACONPORT=${SERVERBEACONPORT}
+            - SERVERGAMEPORT=${SERVERGAMEPORT}
+            - SERVERIP=${SERVERIP}
+            - SERVERQUERYPORT=${SERVERQUERYPORT}
+            - SKIPUPDATE=${SKIPUPDATE}
             - STEAMBETA=${STEAMBETA}
+            - TIMEOUT=${TIMEOUT}
         restart: unless-stopped
         deploy:
           resources:
