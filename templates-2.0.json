@@ -330,6 +330,12 @@
 			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.jpgg",
 			"env": [
 				{
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/data/valheim/config",
+					"description": "Valheim config directory binding"
+				},
+				{
 					"name": "MAXPLAYERS",
 					"label": "MAXPLAYERS",
 					"default": "8",
