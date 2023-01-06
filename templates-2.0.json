@@ -327,7 +327,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/satisfactory/docker-compose.yml"
 			},
-			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.png",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/satisfactory.jpgg",
 			"env": [
 				{
 					"name": "MAXPLAYERS",
