@@ -9,6 +9,8 @@ services:
       - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerName=${SERVER_NAME}"
       - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerPassword=${SERVER_PASSWD}}"
       - "CONANEXILES_INSTANCENAME=exiles0"
+      - "CONANEXILES_PORT = ${SERVER_PORT}"
+      - "CONANEXILES_QUERYPORT = ${SERVER_QUERYPORT}"
       - "CONANEXILES_Game_RconPlugin_RconEnabled=${RCON_ENABLE}"
       - "CONANEXILES_Game_RconPlugin_RconPassword=${ADMIN_PASSWD}"
       - "CONANEXILES_Game_RconPlugin_RconPort=${RCON_PORT}"
@@ -230,7 +232,7 @@ services:
       - "CONANEXILES_Lightmass_DevOptions.StaticLightingProductionQuality_AdaptiveBrightnessThresholdScale=.01"
       - "CONANEXILES_Lightmass_DevOptions.ImportanceTracing_NumHemisphereSamples=256" 
     ports:
-        - "${SERVER_PORTRANGE}:7777-7778/udp"
-        - "${SERVER_QUERYPORT}:27015/udp"
+        - "${SERVER_PORTRANGE}:${SERVER_PORTRANGE}/udp"
+        - "${SERVER_QUERYPORT}:${SERVER_QUERYPORT}/udp"
     volumes:
         - ${SERVER_DATAFILES}:/conanexiles
