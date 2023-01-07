@@ -7,7 +7,7 @@ services:
     environment:
       - "CONANEXILES_ServerSettings_ServerSettings_AdminPassword=${ADMIN_PASSWD}"
       - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerName=${SERVER_NAME}"
-      - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerPassword=${SERVER_PASSWD}}"
+      - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerPassword=${SERVER_PASSWD}"
       - "CONANEXILES_INSTANCENAME=exiles0"
       - "CONANEXILES_PORT = ${SERVER_PORT}"
       - "CONANEXILES_QUERYPORT = ${SERVER_QUERYPORT}"
