@@ -317,7 +317,7 @@
 			"type": 3,
 			"title": "Conan_Exiles",
 			"name": "Conan_Exiles",
-			"note": "Conan Exiles server v1.2",
+			"note": "Conan Exiles server v1.3",
 			"description": "Conan Exiles game.",
 			"platform": "linux",
 			"categories": [
@@ -370,6 +370,12 @@
 					"label": "SERVER_QUERYPORT",
 					"default": "27015",
 					"description": "Conan Exiles Server Server Query Port"
+				},
+				{
+					"name": "SERVER_REGION",
+					"label": "SERVER_REGION",
+					"default": "0",
+					"description": "Conan Exiles Server Region (0-5)"
 				},
 				{
 					"name": "RCON_ENABLE",

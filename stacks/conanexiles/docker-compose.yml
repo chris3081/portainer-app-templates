@@ -89,6 +89,7 @@ services:
       - "CONANEXILES_Game_/script/aimodule.envquerymanager_bTestQueriesUsingBreadth=false"
       - "CONANEXILES_Game_Settings.Physics.Cloth_MaxClothSimuatingActors=3"
       - "CONANEXILES_Game_Settings.Physics.Cloth_ClothSimulationAdjustmentInterval=0.650000"
+      - "CONANEXILES_ServerSettings_ServerSettings_ServerRegion=${SERVER_REGION}"
       - "CONANEXILES_ServerSettings_ServerSettings_RegionBlockList="
       - "CONANEXILES_ServerSettings_ServerSettings_CorpsesPerPlayer=3"
       - "CONANEXILES_ServerSettings_ServerSettings_MaxDeathMapMarkers=3"
