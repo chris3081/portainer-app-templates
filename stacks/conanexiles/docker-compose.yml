@@ -16,6 +16,7 @@ services:
       - "CONANEXILES_Game_RconPlugin_RconPort=${RCON_PORT}"
       - "CONANEXILES_Game_RconPlugin_RconMaxKarma=60"
       - "CONANEXILES_UPDATE_SHUTDOWN_TIMER=15"
+      - CONANEXILES_CMDSWITCHES="-Port=${SERVER_PORT} -QueryPort=${SERVER_QUERYPORT}"
       # Mods
       ## Pippi: 880454836                                    # Servermanagemnt on another level
       ## Fashionist: 1159180273                              # Nice Styles, also restyle ingame
