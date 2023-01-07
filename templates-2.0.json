@@ -315,6 +315,84 @@
 		},
 		{
 			"type": 3,
+			"title": "Conan_Exiles",
+			"name": "Conan_Exiles",
+			"note": "Conan Exiles server",
+			"description": "Conan Exiles game.",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/valheim/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/conan_exiles_logo.jpg",
+			"env": [
+				{
+					"name": "SERVER_NAME",
+					"label": "SERVER_NAME",
+					"default": "My Server",
+					"description": "Conan Exiles Server Name"
+				},
+				{
+					"name": "SERVER_PASSWD",
+					"label": "SERVER_PASSWD",
+					"default": "",
+					"description": "Conan Exiles Server Password"
+				},
+				{
+					"name": "ADMIN_PASSWD",
+					"label": "ADMIN_PASSWD",
+					"default": "SecretPassword",
+					"description": "Conan Exiles Server Admin Password"
+				},
+				{
+					"name": "SERVER_DATAFILES",
+					"label": "SERVER_DATAFILES",
+					"default": "/srv/data/conanexiles",
+					"description": "Conan Exiles Server Server Port Range"
+				},
+				{
+					"name": "SERVER_PORTRANGE",
+					"label": "SERVER_PORTRANGE",
+					"default": "7777-7778",
+					"description": "Conan Exiles Server Server Port Range"
+				},
+				{
+					"name": "SERVER_QUERYPORT",
+					"label": "SERVER_QUERYPORT",
+					"default": "27015",
+					"description": "Conan Exiles Server Server Query Port"
+				},
+				{
+					"name": "RCON_ENABLE",
+					"label": "RCON_ENABLE",
+					"default": "1",
+					"description": "Conan Exiles RCON Enabled (0/1)"
+				},
+				{
+					"name": "RCON_PORT",
+					"label": "RCON_PORTS",
+					"default": "25575",
+					"description": "Conan Exiles RCON Port"
+				},
+				{
+					"name": "CE_MODS",
+					"label": "CE_MODS",
+					"default": "880454836,1159180273,1389908968,1369743238,2050780234,2356146223,1701136207",
+					"description": "Conan Exiles Mods"
+				},
+				{
+					"name": "CE_TICKRATE",
+					"label": "CE_TICKRATE",
+					"default": "30",
+					"description": "Conan Exiles Tick Rate (min 30)"
+				}
+			]
+		},
+		{
+			"type": 3,
 			"title": "Satisfactory",
 			"name": "Satisfactory",
 			"note": "Satisfactory server",
