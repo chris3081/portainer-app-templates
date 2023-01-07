@@ -325,7 +325,7 @@
 			],
 			"repository": {
 				"url": "https://github.com/chris3081/portainer-app-templates",
-				"stackfile": "stacks/valheim/docker-compose.yml"
+				"stackfile": "stacks/conanexiles/docker-compose.yml"
 			},
 			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/conan_exiles_logo.jpg",
 			"env": [
