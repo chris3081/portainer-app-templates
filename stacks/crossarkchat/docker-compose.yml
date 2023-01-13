@@ -7,7 +7,7 @@ services:
       - ark
     restart: unless-stopped
     volumes:
-      - {{ CONFIG_DIRECTORY }}:/app/CrossArkChatLinux/Config
+      - ${CONFIG_DIRECTORY}:/app/CrossArkChatLinux/Config
 
 networks:
   ark: {}

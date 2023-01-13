@@ -670,10 +670,12 @@
 				"stackfile": "stacks/crossarkchat/docker-compose.yml"
 			},
 			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/cross_ark_chat.png",
-			"volumes": [
+			"env": [
 				{
-				  "container": "/app/CrossArkChatLinux/Config",
-				  "bind": "/srv/data/crosarkchat"
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/data/satisfactory/config",
+					"description": "Croos Ark Chat config directory binding"
 				}
 			]
 		}
