@@ -669,7 +669,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/crossarkchat/docker-compose.yml"
 			},
-			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/crossarkchat.jpg",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/cross_ark_chat.png",
 			"volumes": [
 				{
 				  "container": "/app/CrossArkChatLinux/Config",
