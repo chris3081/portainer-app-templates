@@ -15,7 +15,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/7daystodie/docker-compose.yml"
 			},
-			"logo": "https://7daystodie.com/images/header_g.png",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/7days.png",
 			"env": [
 				{
 					"name": "START_MODE",
