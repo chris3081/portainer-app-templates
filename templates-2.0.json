@@ -209,7 +209,7 @@
 			"type": 3,
 			"title": "Valheim",
 			"name": "Valheim",
-			"note": "Valheim server and discord bot  v1.0",
+			"note": "Valheim server and discord bot  v1.1",
 			"description": "Valheim game.",
 			"platform": "linux",
 			"categories": [
@@ -268,6 +268,12 @@
 					"label": "VALHEIM_PLUS",
 					"default": "true",
 					"description": "Velheim Plus"
+				},
+				{
+					"name": "BEPINEX",
+					"label": "BEPINEX",
+					"default": "true",
+					"description": "Enables BepInExPack Valheim packages BepInEx for Valheim"
 				},
 				{
 					"name": "ADMINLIST_IDS",
