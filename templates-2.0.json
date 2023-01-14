@@ -15,7 +15,7 @@
 				"url": "https://github.com/chris3081/portainer-app-templates",
 				"stackfile": "stacks/7daystodie/docker-compose.yml"
 			},
-			"logo": "https://7daystodie.com/images/header_g.png",
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/7days.png",
 			"env": [
 				{
 					"name": "START_MODE",
@@ -357,7 +357,7 @@
 					"name": "SERVER_DATAFILES",
 					"label": "SERVER_DATAFILES",
 					"default": "/srv/data/conanexiles",
-					"description": "Conan Exiles Server Server Port Range"
+					"description": "Conan Exiles Server Server data files"
 				},
 				{
 					"name": "SERVER_PORT",
@@ -550,7 +550,139 @@
 					"label": "TIMEOUT",
 					"default" : "300",
 					"description": "set client timeout (in seconds)"
-				}					
+				}
+			]
+		},
+		{
+			"type": 3,
+			"title": "Ark_Survival",
+			"name": "Ark_Survival",
+			"note": "Ark Survival server v1.0",
+			"description": "Ark Survival game.",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/ark/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/ark.jpg",
+			"env": [
+				{
+					"name": "SESSION_NAME",
+					"label": "SESSION_NAME",
+					"default": "My Server",
+					"description": "Ark Server Name"
+				},
+				{
+					"name": "SERVER_MAP",
+					"label": "SERVER_MAP",
+					"default": "LostParadise",
+					"description": "Ark Server Map"
+				},
+				{
+					"name": "SERVER_PASSWORD",
+					"label": "SERVER_PASSWORD",
+					"default": "",
+					"description": "Ark Server Password"
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "ADMIN_PASSWORD",
+					"default": "SecretPassword",
+					"description": "Ark Server Admin Password"
+				},
+				{
+					"name": "SERVER_DATAFILES",
+					"label": "SERVER_DATAFILES",
+					"default": "/srv/data/conanexiles",
+					"description": "Ark Server Server Data location"
+				},
+				{
+					"name": "GAME_CLIENT_PORT",
+					"label": "GAME_CLIENT_PORT",
+					"default": "7777",
+					"description": "Ark Server Game client Port"
+				},
+				{
+					"name": "UDP_SOCKET_PORT",
+					"label": "UDP_SOCKET_PORT",
+					"default": "7778",
+					"description": "Ark Server Port (Server Port ans +1)"
+				},
+				{
+					"name": "SERVER_LIST_PORT",
+					"label": "SERVER_LIST_PORT",
+					"default": "27015",
+					"description": "Ark Server Server List Port"
+				},
+				{
+					"name": "RCON_PORT",
+					"label": "RCON_PORT",
+					"default": "27020",
+					"description": "Ark Server Server RCON Port"
+				},
+				{
+					"name": "GAME_MOD_IDS",
+					"label": "GAME_MOD_IDS",
+					"default": "487516323,487516324,487516325",
+					"description": "Ark Survival Game Mod IDS"
+				},
+				{
+					"name": "UPDATE_ON_START",
+					"label": "UPDATE_ON_START",
+					"default": "true",
+					"description": "Ark Survival update on start"
+				},
+				{
+					"name": "MAX_PLAYERS",
+					"label": "MAX_PLAYERS",
+					"default": "20",
+					"description": "Ark server max players"
+				},
+				{
+					"name": "BACKUP_ON_STOP",
+					"label": "BACKUP_ON_STOP",
+					"default": "true",
+					"description": "Ark Server backup on stop"
+				},
+				{
+					"name": "PRE_UPDATE_BACKUP",
+					"label": "PRE_UPDATE_BACKUP",
+					"default": "true",
+					"description": "Ark Backup pre update"
+				},
+				{
+					"name": "WARN_ON_STOP",
+					"label": "WARN_ON_STOP",
+					"default": "true",
+					"description": "Broadcast a warning upon graceful shutdown"
+				}
+			]
+		},
+		{
+			"type": 3,
+			"title": "Cross_Ark_Chat",
+			"name": "Cross_Ark_Chat",
+			"note": "Ark Survival cross server chat v1.0",
+			"description": "Ark Survival cross chat server.",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/crossarkchat/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/cross_ark_chat.png",
+			"env": [
+				{
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/data/satisfactory/config",
+					"description": "Croos Ark Chat config directory binding"
+				}
 			]
 		}
 	]
