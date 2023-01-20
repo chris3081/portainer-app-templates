@@ -596,13 +596,13 @@
 				{
 					"name": "SERVER_DATAFILES",
 					"label": "SERVER_DATAFILES",
-					"default": "/srv/data/ark",
+					"default": "/srv/data/ark/LostParadise",
 					"description": "Ark Server Server Data location"
 				},
 				{
 					"name": "BACKUPS_BIND_DIRECTORY",
 					"label": "BACKUPS_BIND_DIRECTORY",
-					"default": "/mnt/backups/ark",
+					"default": "/mnt/backups/ark/LostParadise",
 					"description": "Host Bind mountpoint"
 				},
 				{
