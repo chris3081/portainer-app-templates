@@ -596,8 +596,14 @@
 				{
 					"name": "SERVER_DATAFILES",
 					"label": "SERVER_DATAFILES",
-					"default": "/srv/data/conanexiles",
+					"default": "/srv/data/ark",
 					"description": "Ark Server Server Data location"
+				},
+				{
+					"name": "BACKUPS_BIND_DIRECTORY",
+					"label": "BACKUPS_BIND_DIRECTORY",
+					"default": "/mnt/backups/ark",
+					"description": "Host Bind mountpoint"
 				},
 				{
 					"name": "GAME_CLIENT_PORT",
