@@ -578,7 +578,7 @@
 				{
 					"name": "SERVER_MAP",
 					"label": "SERVER_MAP",
-					"default": "LostParadise",
+					"default": "LostIsland",
 					"description": "Ark Server Map"
 				},
 				{
