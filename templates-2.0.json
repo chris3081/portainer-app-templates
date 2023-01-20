@@ -260,7 +260,7 @@
 				{
 					"name": "BACKUPS_BIND_DIRECTORY",
 					"label": "BACKUPS_BIND_DIRECTORY",
-					"default": "/mnt/backups/valheim",
+					"default": "/srv/backups/valheim",
 					"description": "Host Bind mountpoint"
 				},
 				{
@@ -602,7 +602,7 @@
 				{
 					"name": "BACKUPS_BIND_DIRECTORY",
 					"label": "BACKUPS_BIND_DIRECTORY",
-					"default": "/mnt/backups/ark/LostIsland",
+					"default": "/srv/backups/ark/LostIsland",
 					"description": "Host Bind mountpoint"
 				},
 				{
