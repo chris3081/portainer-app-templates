@@ -680,7 +680,7 @@
 				{
 					"name": "CONFIG_DIRECTORY",
 					"label": "CONFIG_DIRECTORY",
-					"default": "/srv/data/satisfactory/config",
+					"default": "/srv/data/crossarkchat/config",
 					"description": "Croos Ark Chat config directory binding"
 				}
 			]
