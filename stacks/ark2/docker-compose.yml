@@ -82,8 +82,8 @@ services:
     deploy:
       mode: global
     environment:
-      CRON_AUTO_UPDATE: "15 */3 * * *"
-      CRON_AUTO_BACKUP: "15 */1 * * *"
+      CRON_AUTO_UPDATE: "30 */3 * * *"
+      CRON_AUTO_BACKUP: "30 */1 * * *"
       UPDATEONSTART: 1
       BACKUPONSTART: 1
       BACKUPONSTOP: 1
