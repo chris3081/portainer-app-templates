@@ -755,6 +755,30 @@
 					"description": "Croos Ark Chat config directory binding"
 				}
 			]
+		},
+		{
+			"type": 3,
+			"title": "DD_Bot",
+			"name": "DD_Bot",
+			"note": "Dock v1.0",
+			"description": "Ark Survival cross chat server.",
+			"platform": "linux",
+			"categories": [
+				"Management"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/dd_bot/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/discord.png",
+			"env": [
+				{
+					"name": "CONFIG_DIRECTORY",
+					"label": "CONFIG_DIRECTORY",
+					"default": "/srv/data/dd_bot/config",
+					"description": "dd_bot config directory binding"
+				}
+			]
 		}
 	]
 }

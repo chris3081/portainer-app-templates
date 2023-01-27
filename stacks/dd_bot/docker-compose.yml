@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dishorde:
+    image: assaro/ddbot:latest
+    container_name: ddbot
+    networks:
+      - ddbot
+    restart: unless-stopped
+    volumes:
+      - ${CONFIG_DIRECTORY}:/app/settings
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  ddbot: {}
