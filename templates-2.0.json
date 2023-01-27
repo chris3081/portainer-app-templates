@@ -671,7 +671,7 @@
 			"type": 3,
 			"title": "Ark_Survival_Cluster",
 			"name": "Ark_Survival_Cluster",
-			"note": "Ark Survival Server Cluster v1.3 (Valguero, Genesis Part 2, Aberration)",
+			"note": "Ark Survival Server Cluster v1.4 (Valguero, Genesis Part 2, Aberration)",
 			"description": "Ark Survival Game - Cluster with Valguero, Genesis Part 2 and Aberration",
 			"platform": "linux",
 			"categories": [
@@ -688,7 +688,13 @@
 					"label": "SERVER_NAME",
 					"default": "Paradise Survivors",
 					"description": "Ark Server Name"
-				},{
+				},{ 
+				{
+					"name": "SERVER_DATAFILES",
+					"label": "SERVER_DATAFILES",
+					"default": "/srv/data/ark",
+					"description": "Ark Server Datafile Location"
+				},{  
 					"name": "SERVER_PASSWORD",
 					"label": "SERVER_PASSWORD",
 					"default": "",
