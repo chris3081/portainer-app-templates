@@ -575,7 +575,6 @@
 					"default": "Paradise Survivors",
 					"description": "Ark Server Name"
 				},{ 
-				{
 					"name": "SERVER_DATAFILES",
 					"label": "SERVER_DATAFILES",
 					"default": "/srv/data/ark",
