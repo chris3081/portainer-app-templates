@@ -33,7 +33,7 @@ services:
       KILL_ALL_PROCESSES_TIMEOUT: 300
     volumes:
       - ${SERVER_DATAFILES}/valguero:/ark
-      - ${BACKUPS_BIND_DIRECTORY}/valguero::/ark/backup
+      - ${BACKUPS_BIND_DIRECTORY}/valguero:/ark/backup
       - ${SERVER_DATAFILES}/cluster:/cluster
     ports:
       - "32330:32330/tcp"
@@ -75,7 +75,7 @@ services:
       KILL_ALL_PROCESSES_TIMEOUT: 300
     volumes:
       - ${SERVER_DATAFILES}/gen2:/ark
-      - ${BACKUPS_BIND_DIRECTORY}/valguero::/ark/backup
+      - ${BACKUPS_BIND_DIRECTORY}/valguero:/ark/backup
       - ${SERVER_DATAFILES}/cluster:/cluster
     ports:
       - "32331:32331/tcp"
@@ -117,7 +117,7 @@ services:
       KILL_ALL_PROCESSES_TIMEOUT: 300
     volumes:
       - ${SERVER_DATAFILES}/aberration:/ark
-      - ${BACKUPS_BIND_DIRECTORY}/valguero::/ark/backup
+      - ${BACKUPS_BIND_DIRECTORY}/valguero:/ark/backup
       - ${SERVER_DATAFILES}/cluster:/cluster
     ports:
       - "32332:32332/tcp"
