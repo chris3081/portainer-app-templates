@@ -557,7 +557,7 @@
 			"type": 3,
 			"title": "Ark_Survival_Cluster",
 			"name": "Ark_Survival_Cluster",
-			"note": "Ark Survival Server Cluster v1.4 (Valguero, Genesis Part 2, Aberration)",
+			"note": "Ark Survival Server Cluster v1.5 (Valguero, Genesis Part 2, Aberration)",
 			"description": "Ark Survival Game - Cluster with Valguero, Genesis Part 2 and Aberration",
 			"platform": "linux",
 			"categories": [
@@ -580,6 +580,11 @@
 					"default": "/srv/data/ark",
 					"description": "Ark Server Datafile Location"
 				},{  
+					"name": "BACKUPS_BIND_DIRECTORY",
+					"label": "BACKUPS_BIND_DIRECTORY",
+					"default": "/srv/backups/ark",
+					"description": "Host Bind mountpoint"
+				},{
 					"name": "SERVER_PASSWORD",
 					"label": "SERVER_PASSWORD",
 					"default": "",
