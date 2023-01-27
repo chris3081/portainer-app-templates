@@ -669,6 +669,65 @@
 		},
 		{
 			"type": 3,
+			"title": "Ark_Survival_Cluster",
+			"name": "Ark_Survival_Cluster",
+			"note": "Ark Survival Server Cluster v1.3 (Valguero, Genesis Part 2, Aberration)",
+			"description": "Ark Survival Game - Cluster with Valguero, Genesis Part 2 and Aberration",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/ark2/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/ark.jpg",
+			"env": [
+				{
+					"name": "SERVER_NAME",
+					"label": "SERVER_NAME",
+					"default": "Paradise Survivors",
+					"description": "Ark Server Name"
+				},{
+					"name": "SERVER_PASSWORD",
+					"label": "SERVER_PASSWORD",
+					"default": "",
+					"description": "Ark Server Password"
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "ADMIN_PASSWORD",
+					"default": "SecretPassword",
+					"description": "Ark Server Admin Password"
+				},
+				{
+					"name": "CLUSTER_ID",
+					"label": "CLUSTER_ID",
+					"default": "KeepMeSecret",
+					"description": "Ark Server Cluster ID"
+				},
+				{
+					"name": "MODS",
+					"label": "MODS",
+					"default": "731604991,510590313,2007400172,2007461356,2007447056,2007441758,2007430597,2007418454,2007411835",
+					"description": "Ark Server Mods to include"
+				},
+				{
+					"name": "RCON_ENABLE",
+					"label": "RCON_ENABLE",
+					"default": "True",
+					"description": "Ark Server Remote Console"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Madrid",
+					"description": "Timezone"
+				}
+			]
+		},
+		{
+			"type": 3,
 			"title": "Cross_Ark_Chat",
 			"name": "Cross_Ark_Chat",
 			"note": "Ark Survival cross server chat v1.0",
