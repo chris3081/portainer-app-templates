@@ -555,120 +555,6 @@
 		},
 		{
 			"type": 3,
-			"title": "Ark_Survival",
-			"name": "Ark_Survival",
-			"note": "Ark Survival server v1.0",
-			"description": "Ark Survival game.",
-			"platform": "linux",
-			"categories": [
-				"games"
-			],
-			"repository": {
-				"url": "https://github.com/chris3081/portainer-app-templates",
-				"stackfile": "stacks/ark/docker-compose.yml"
-			},
-			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/ark.jpg",
-			"env": [
-				{
-					"name": "SESSION_NAME",
-					"label": "SESSION_NAME",
-					"default": "My Server",
-					"description": "Ark Server Name"
-				},
-				{
-					"name": "SERVER_MAP",
-					"label": "SERVER_MAP",
-					"default": "LostIsland",
-					"description": "Ark Server Map"
-				},
-				{
-					"name": "SERVER_PASSWORD",
-					"label": "SERVER_PASSWORD",
-					"default": "",
-					"description": "Ark Server Password"
-				},
-				{
-					"name": "ADMIN_PASSWORD",
-					"label": "ADMIN_PASSWORD",
-					"default": "SecretPassword",
-					"description": "Ark Server Admin Password"
-				},
-				{
-					"name": "SERVER_DATAFILES",
-					"label": "SERVER_DATAFILES",
-					"default": "/srv/data/ark/LostIsland",
-					"description": "Ark Server Server Data location"
-				},
-				{
-					"name": "BACKUPS_BIND_DIRECTORY",
-					"label": "BACKUPS_BIND_DIRECTORY",
-					"default": "/srv/backups/ark/LostIsland",
-					"description": "Host Bind mountpoint"
-				},
-				{
-					"name": "GAME_CLIENT_PORT",
-					"label": "GAME_CLIENT_PORT",
-					"default": "7777",
-					"description": "Ark Server Game client Port"
-				},
-				{
-					"name": "UDP_SOCKET_PORT",
-					"label": "UDP_SOCKET_PORT",
-					"default": "7778",
-					"description": "Ark Server Port (Server Port ans +1)"
-				},
-				{
-					"name": "SERVER_LIST_PORT",
-					"label": "SERVER_LIST_PORT",
-					"default": "27015",
-					"description": "Ark Server Server List Port"
-				},
-				{
-					"name": "RCON_PORT",
-					"label": "RCON_PORT",
-					"default": "27020",
-					"description": "Ark Server Server RCON Port"
-				},
-				{
-					"name": "GAME_MOD_IDS",
-					"label": "GAME_MOD_IDS",
-					"default": "487516323,487516324,487516325",
-					"description": "Ark Survival Game Mod IDS"
-				},
-				{
-					"name": "UPDATE_ON_START",
-					"label": "UPDATE_ON_START",
-					"default": "true",
-					"description": "Ark Survival update on start"
-				},
-				{
-					"name": "MAX_PLAYERS",
-					"label": "MAX_PLAYERS",
-					"default": "20",
-					"description": "Ark server max players"
-				},
-				{
-					"name": "BACKUP_ON_STOP",
-					"label": "BACKUP_ON_STOP",
-					"default": "true",
-					"description": "Ark Server backup on stop"
-				},
-				{
-					"name": "PRE_UPDATE_BACKUP",
-					"label": "PRE_UPDATE_BACKUP",
-					"default": "true",
-					"description": "Ark Backup pre update"
-				},
-				{
-					"name": "WARN_ON_STOP",
-					"label": "WARN_ON_STOP",
-					"default": "true",
-					"description": "Broadcast a warning upon graceful shutdown"
-				}
-			]
-		},
-		{
-			"type": 3,
 			"title": "Ark_Survival_Cluster",
 			"name": "Ark_Survival_Cluster",
 			"note": "Ark Survival Server Cluster v1.4 (Valguero, Genesis Part 2, Aberration)",
@@ -679,7 +565,7 @@
 			],
 			"repository": {
 				"url": "https://github.com/chris3081/portainer-app-templates",
-				"stackfile": "stacks/ark2/docker-compose.yml"
+				"stackfile": "stacks/ark/docker-compose.yml"
 			},
 			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/ark.jpg",
 			"env": [
