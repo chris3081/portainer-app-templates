@@ -234,6 +234,7 @@ services:
       - "CONANEXILES_Lightmass_DevOptions.StaticLightingProductionQuality_NumIndirectIrradiancePhotonsScale=1"
       - "CONANEXILES_Lightmass_DevOptions.StaticLightingProductionQuality_AdaptiveBrightnessThresholdScale=.01"
       - "CONANEXILES_Lightmass_DevOptions.ImportanceTracing_NumHemisphereSamples=256" 
+      - "TIMEZONE=${TZ}"
     ports:
         - "${SERVER_PORTRANGE}:${SERVER_PORTRANGE}/udp"
         - "${SERVER_QUERYPORT}:${SERVER_QUERYPORT}/udp"
