@@ -20,7 +20,7 @@ services:
       MAX_BACKUP_SIZE: 500
       SERVERMAP: "Valguero_P"
       SESSION_NAME: "${SERVER_NAME} - Valguero"
-      MAX_PLAYERS: 12
+      MAX_PLAYERS: ${MAX_PLAYERS}
       RCON_ENABLE: ${RCON_ENABLE}
       RCON_PORT: 32330
       GAME_PORT: 7777
@@ -63,7 +63,7 @@ services:
       MAX_BACKUP_SIZE: 500
       SERVERMAP: "Gen2"
       SESSION_NAME: "${SERVER_NAME} - Genesis 2"
-      MAX_PLAYERS: 12
+      MAX_PLAYERS: ${MAX_PLAYERS}
       RCON_ENABLE: ${RCON_ENABLE}
       RCON_PORT: 32331
       GAME_PORT: 7779
@@ -106,7 +106,7 @@ services:
       MAX_BACKUP_SIZE: 500
       SERVERMAP: "Aberration_P"
       SESSION_NAME: "${SERVER_NAME} - Aberration"
-      MAX_PLAYERS: 12
+      MAX_PLAYERS: ${MAX_PLAYERS}
       RCON_ENABLE: ${RCON_ENABLE}
       RCON_PORT: 32332
       GAME_PORT: 7781

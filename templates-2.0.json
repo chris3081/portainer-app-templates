@@ -557,7 +557,7 @@
 			"type": 3,
 			"title": "Ark_Survival_Cluster",
 			"name": "Ark_Survival_Cluster",
-			"note": "Ark Survival Server Cluster v1.9 (Valguero, Genesis Part 2 and Aberration, with Cross Ark Chat)",
+			"note": "Ark Survival Server Cluster v1.10 (Valguero, Genesis Part 2 and Aberration, with Cross Ark Chat)",
 			"description": "Ark Survival Game - Cluster with Valguero, Genesis Part 2 and Aberration",
 			"platform": "linux",
 			"categories": [
@@ -601,6 +601,12 @@
 					"label": "CLUSTER_ID",
 					"default": "KeepMeSecret",
 					"description": "Ark Server Cluster ID"
+				},
+				{
+					"name": "MAX_PLAYERS",
+					"label": "MAX_PLAYERS",
+					"default": "12",
+					"description": "Maximum Players"
 				},
 				{
 					"name": "MODS",
