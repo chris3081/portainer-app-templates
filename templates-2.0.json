@@ -557,7 +557,7 @@
 			"type": 3,
 			"title": "Ark_Survival_Cluster",
 			"name": "Ark_Survival_Cluster",
-			"note": "Ark Survival Server Cluster v1.7 (Valguero, Genesis Part 2 and Aberration, with Cross Ark Chat)",
+			"note": "Ark Survival Server Cluster v1.8 (Valguero, Genesis Part 2 and Aberration, with Cross Ark Chat)",
 			"description": "Ark Survival Game - Cluster with Valguero, Genesis Part 2 and Aberration",
 			"platform": "linux",
 			"categories": [
@@ -619,30 +619,6 @@
 					"label": "TZ",
 					"default": "Europe/Madrid",
 					"description": "Timezone"
-				}
-			]
-		},
-		{
-			"type": 3,
-			"title": "Cross_Ark_Chat",
-			"name": "Cross_Ark_Chat",
-			"note": "Ark Survival cross server chat v1.0",
-			"description": "Ark Survival cross chat server.",
-			"platform": "linux",
-			"categories": [
-				"games"
-			],
-			"repository": {
-				"url": "https://github.com/chris3081/portainer-app-templates",
-				"stackfile": "stacks/crossarkchat/docker-compose.yml"
-			},
-			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/cross_ark_chat.png",
-			"env": [
-				{
-					"name": "CONFIG_DIRECTORY",
-					"label": "CONFIG_DIRECTORY",
-					"default": "/srv/data/crossarkchat/config",
-					"description": "Croos Ark Chat config directory binding"
 				}
 			]
 		},

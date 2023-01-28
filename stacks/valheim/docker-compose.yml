@@ -15,6 +15,7 @@ services:
     restart: unless-stopped
   valheim: 
     image: ghcr.io/lloesche/valheim-server
+    container_name: valheim
     cap_add:
       - sys_nice
     volumes: 

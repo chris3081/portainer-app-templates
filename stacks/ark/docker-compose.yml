@@ -4,6 +4,7 @@ services:
   valguero:
     image: r15ch13/arkcluster:latest
     restart: unless-stopped
+    container_name: arkserver-valguero
     deploy:
       mode: global
     environment:
@@ -46,6 +47,7 @@ services:
   genesis2:
     image: r15ch13/arkcluster:latest
     restart: unless-stopped
+    container_name: arkserver-genesis2
     deploy:
       mode: global
     environment:
@@ -88,6 +90,7 @@ services:
   aberration:
     image: r15ch13/arkcluster:latest
     restart: unless-stopped
+    container_name: arkserver-aberration
     deploy:
       mode: global
     environment:

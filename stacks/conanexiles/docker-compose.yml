@@ -4,6 +4,7 @@ services:
   conan-exiles:
     image: alinmear/docker-conanexiles:latest
     restart: unless-stopped
+    container_name: conan-exiles
     environment:
       - "CONANEXILES_ServerSettings_ServerSettings_AdminPassword=${ADMIN_PASSWD}"
       - "CONANEXILES_Engine_OnlineSubSystemSteam_ServerName=${SERVER_NAME}"
