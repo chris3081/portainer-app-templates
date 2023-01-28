@@ -137,6 +137,8 @@ services:
     networks:
       - ark
     restart: unless-stopped
+    environment:
+      TZ: ${TZ}
     volumes:
       - ${SERVER_DATAFILES}/crossarkchat:/app/CrossArkChatLinux/Config
       
