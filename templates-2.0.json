@@ -323,7 +323,7 @@
 			"type": 3,
 			"title": "Conan_Exiles",
 			"name": "Conan_Exiles",
-			"note": "Conan Exiles server v1.6",
+			"note": "Conan Exiles server v1.7",
 			"description": "Conan Exiles game.",
 			"platform": "linux",
 			"categories": [
@@ -384,8 +384,8 @@
 					"description": "Conan Exiles Server Region (0-5)"
 				},
 				{
-					"name": "TZ",
-					"label": "TZ",
+					"name": "TIMEZONE",
+					"label": "TIMEZONE",
 					"default": "Europe/Madrid",
 					"description": "Conan Exiles Server Timezone"
 				},
