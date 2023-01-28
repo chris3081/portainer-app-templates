@@ -126,6 +126,16 @@ services:
       - "27019:27019/udp"
     networks:
       - ark
- 
+
+  crossarkchat:
+    image: ghcr.io/chris3081/crossarkchat:master
+    restart: unless-stopped
+    container_name: crossarkchat
+    networks:
+      - ark
+    restart: unless-stopped
+    volumes:
+      - ${SERVER_DATAFILES}/crossarkchat:/app/CrossArkChatLinux/Config
+      
 networks:
   ark: {}
