@@ -126,6 +126,12 @@ do
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings NightTimeSpeedScale 1.733300
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings PerPlatformMaxStructuresMultiplier 2.000000
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings MaxPlatformSaddleStructureLimit 200
+	crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings AutomationModActive True
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings KitchenModActive True
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings RaidModActive True
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings GardenModActive True
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings BabyModActive True
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings PowerModActive True
 
     sed -i -r "s/(\S*)\s*=\s*(.*)/\1=\2/g" $ARK_GAMEUSERSETTINGS_CFG
 done
