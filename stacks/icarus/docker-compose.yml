@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   icarus:
-    image: nerodon/icarus-dedicated:latest    
+    image: mastermnb/icarus-dedicated-server:latest    
     container_name: icarus
     init: true
     restart: unless-stopped
@@ -12,16 +12,18 @@ services:
       - "${SERVER_PORT}:${SERVER_PORT}/udp"
       - "${SERVER_QUERYPORT}:${SERVER_QUERYPORT}/udp"
     environment:
-      - SERVERNAME=${SERVER_NAME}
+      - ASYNC_TIMEOUT=60
       - BRANCH=public
-      - PORT=${SERVER_PORT}
-      - QUERYPORT=${SERVER_QUERYPORT}
-      - STEAM_USERID=1000
-      - STEAM_GROUPID=1000
-      - STEAM_ASYNC_TIMEOUT=60
+      - AUTOUPDATE=1
+      - SERVERNAME=${SERVER_NAME}
+      - SERVER_PORT=${SERVER_PORT}
+      - QUERY_PORT=${SERVER_QUERYPORT}
+      - JOIN_PASSWORD=${PASSWORD}
+      - MAX_PLAYERS=8
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
     volumes:
-      - ${SERVER_DATAFILES}:/game/icarus
-      - ${SERVER_DATAFILES}:/home/steam/.wine/drive_c/icarus
+      - ${SERVER_DATAFILES}:/home/container/icarus/drive_c/icarus
+      - ${SERVER_DATAFILES}:/home/container/game/icarus
       
 networks:
   icarus: {}

@@ -437,7 +437,7 @@
 			"type": 3,
 			"title": "Icarus",
 			"name": "Icarus",
-			"note": "Icarus Dedicated server v1.1",
+			"note": "Icarus Dedicated server v1.2",
 			"description": "Icarus game.",
 			"platform": "linux",
 			"categories": [
@@ -460,6 +460,18 @@
 					"label": "SERVER_DATAFILES",
 					"default": "/srv/data/icarus",
 					"description": "Icarus Server data files"
+				},
+				{
+					"name": "PASSWORD",
+					"label": "PASSWORD",
+					"default": "password",
+					"description": "Icarus Server password"
+				},
+				{
+					"name": "ADMIN_PASSWORD",
+					"label": "ADMIN_PASSWORD",
+					"default": "admin1234",
+					"description": "Admin Password"
 				},
 				{
 					"name": "SERVER_PORT",
