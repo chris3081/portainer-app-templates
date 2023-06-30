@@ -90,6 +90,24 @@
 					"description": "Update Undead Legacy mod before server start"
 				},
 				{
+					"name": "DARKNESS_FALLS",
+					"label": "DARKNESS_FALLS",
+					"default": "NO",
+					"description": "Install Darkness Falls mod, if UNDEAD_LEGACY it's enable will not install anything"
+				},
+				{
+					"name": "DARKNESS_FALLS_UPDATE",
+					"label": "DARKNESS_FALLS_UPDATE",
+					"default": "NO",
+					"description": "Update Darkness Falls mod before server start"
+				},
+				{
+					"name": "DARKNESS_FALLS_URL",
+					"label": "DARKNESS_FALLS_URL",
+					"default": "False",
+					"description": "Install the provided Darkness Falls url"
+				},
+				{
 					"name": "ENZOMBIES",
 					"label": "ENZOMBIES",
 					"default": "NO",
