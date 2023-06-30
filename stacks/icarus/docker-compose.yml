@@ -23,7 +23,10 @@ services:
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
     volumes:
       - ${SERVER_DATAFILES}:/home/container/icarus/drive_c/icarus
-      - ${SERVER_DATAFILES}:/home/container/game/icarus
+      - game:/home/container/game/icarus
       
 networks:
   icarus: {}
+  
+volumes:
+  game: {}
