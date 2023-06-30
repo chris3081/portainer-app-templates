@@ -433,6 +433,48 @@
 				}
 			]
 		},
+				{
+			"type": 3,
+			"title": "Icarus",
+			"name": "Icarus",
+			"note": "Icarus Dedicated server v1.0",
+			"description": "Icarus game.",
+			"platform": "linux",
+			"categories": [
+				"games"
+			],
+			"repository": {
+				"url": "https://github.com/chris3081/portainer-app-templates",
+				"stackfile": "stacks/icarus/docker-compose.yml"
+			},
+			"logo": "https://github.com/chris3081/portainer-app-templates/raw/main/icons/icarus_logo.jpg",
+			"env": [
+				{
+					"name": "SERVER_NAME",
+					"label": "SERVER_NAME",
+					"default": "My Server",
+					"description": "Icarus Server Name"
+				},
+				{
+					"name": "SERVER_DATAFILES",
+					"label": "SERVER_DATAFILES",
+					"default": "/srv/data/icarus",
+					"description": "Icarus Server data files"
+				},
+				{
+					"name": "SERVER_PORT",
+					"label": "SERVER_PORT",
+					"default": "17777",
+					"description": "Icarus Server Game Port"
+				},
+				{
+					"name": "SERVER_QUERYPORT",
+					"label": "SERVER_QUERYPORT",
+					"default": "27015",
+					"description": "Icarus Server Query Port"
+				}
+			]
+		},
 		{
 			"type": 3,
 			"title": "Satisfactory",
