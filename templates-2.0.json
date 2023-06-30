@@ -437,7 +437,7 @@
 			"type": 3,
 			"title": "Icarus",
 			"name": "Icarus",
-			"note": "Icarus Dedicated server v1.0",
+			"note": "Icarus Dedicated server v1.1",
 			"description": "Icarus game.",
 			"platform": "linux",
 			"categories": [
@@ -470,7 +470,7 @@
 				{
 					"name": "SERVER_QUERYPORT",
 					"label": "SERVER_QUERYPORT",
-					"default": "27015",
+					"default": "27215",
 					"description": "Icarus Server Query Port"
 				}
 			]
