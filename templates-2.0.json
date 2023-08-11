@@ -20,7 +20,7 @@
 				{
 					"name": "START_MODE",
 					"label": "START_MODE",
-					"default": "1",
+					"default": "3",
 					"description": "Change between START MODES"
 				},
 				{
