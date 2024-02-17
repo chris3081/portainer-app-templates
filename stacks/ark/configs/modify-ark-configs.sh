@@ -123,7 +123,7 @@ do
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings PreventDownloadItems False
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings PreventDownloadDinos False
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings XPMultiplier 1.500000
-    crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings TamingSpeedMultiplier 5.000000
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings TamingSpeedMultiplier 8.000000
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings HarvestAmountMultiplier 1.500000
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings DayTimeSpeedScale 0.666670
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings NightTimeSpeedScale 1.733300
