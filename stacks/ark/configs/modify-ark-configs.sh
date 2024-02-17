@@ -60,6 +60,7 @@ do
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyImprintAmountMultiplier 10.000000
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyImprintingStatScaleMultiplier 5.000000
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyCuddleIntervalMultiplier 0.060000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyCuddleGracePeriodMultiplier 5.000000
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode CraftingSkillBonusMultiplier 8.000000
 
     sed -i -r "s/(\S*)\s*=\s*(.*)/\1=\2/g" $ARK_GAMEINI_CFG
