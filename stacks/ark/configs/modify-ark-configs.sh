@@ -54,10 +54,13 @@ do
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode bLimitTurretsInRange False
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode bHardLimitTurretsInRange False
     crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode bGenesisUseStructuresPreventionVolumes False
-    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode EggHatchSpeedMultiplier 8.000000
-    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyMatureSpeedMultiplier 8.000000
-    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyCuddleIntervalMultiplier 0.500000
-    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode CraftingSkillBonusMultiplier 4.000000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode MatingIntervalMultiplier 0.500000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode EggHatchSpeedMultiplier 16.000000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyMatureSpeedMultiplier 16.000000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyImprintAmountMultiplier 10.000000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyImprintingStatScaleMultiplier 5.000000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode BabyCuddleIntervalMultiplier 0.060000
+    crudini --set $ARK_GAMEINI_CFG /script/shootergame.shootergamemode CraftingSkillBonusMultiplier 8.000000
 
     sed -i -r "s/(\S*)\s*=\s*(.*)/\1=\2/g" $ARK_GAMEINI_CFG
     #gameusersettings
