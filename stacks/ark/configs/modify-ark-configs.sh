@@ -130,7 +130,7 @@ do
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings NightTimeSpeedScale 1.733300
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings PerPlatformMaxStructuresMultiplier 2.000000
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings MaxPlatformSaddleStructureLimit 200
-    crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings OverrideBondedPassImprintMultiplier 2
+    crudini --set $ARK_GAMEUSERSETTINGS_CFG ServerSettings OverrideBondedPassImprintMultiplier 2.000000
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings AutomationModActive True
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings KitchenModActive True
     crudini --set $ARK_GAMEUSERSETTINGS_CFG ArkAutomatedSettings RaidModActive True
